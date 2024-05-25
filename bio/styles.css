@@ -1,0 +1,40 @@
+h1, h2, h3, p, nav ul {
+    margin: 0;
+    padding: 0;
+   /* this removes default margin/padding 
+    from these elements. You might want to add
+    a few others in here.*/
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+   /* this sets images as block elements
+    and makes sure they don't bust out of 
+    their containers, and that they maintain
+    their aspect ratio. */
+}
+nav ul {
+    list-style-type: none;
+   /* gets rid of bullets */
+}
+   /* You *might* want to convert all elements
+   to box-sizing: border box */
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'DM Mono', monospace;
+    background: #333333;
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+}

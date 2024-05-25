@@ -18,8 +18,6 @@ nav ul {
     list-style-type: none;
    /* gets rid of bullets */
 }
-   /* You *might* want to convert all elements
-   to box-sizing: border box */
 
 * {
     box-sizing: border-box;
@@ -28,37 +26,29 @@ nav ul {
 }
 
 h1 {
-    font-size: 35pt;
     font-weight: normal;
 }
 
 h2 {
     font-weight: normal;
-    color: #999999;
-    font-size: 16pt;
-    padding: 2px;
+}
+
+.firstrow {
+    display: flex;
+    justify-content: space-between;
+
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    display: flex;
-    position: absolute;
-    top: 200px;
-    left: 150px;
-    color: white;
+    margin: auto;
+    width: 800px;
+    padding-top: 100px;
+    padding-bottom: 20px;
 }
 
-#headercircle {
-    font-size: 27pt;
-    position: relative;
-    left: 400px;
-    bottom: 130px;
-    transition: .5s;
-}
-
-#headercircle:hover {
-    font-size: 50pt;
+main {
+    width: 800px;
+    margin: auto;
 }
 
 body {
@@ -66,26 +56,43 @@ body {
     background: #333333;
     color: white;
 }
+.homeicon {
+    display: flex;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: white;
+}
+#headercircle {
+    font-size: 25pt;
+    position: relative;
+    left: 50px;
+    top: -30px;
+    transition: .5s;
+}
+
+#headercircle:hover {
+    font-size: 50pt;
+}
 
 nav {
     display: flex;
-    gap: 70px;
+    gap: 25px;
     position: absolute;
-    right: 150px;
+    right: 100px;
     bottom: 50px;
-    font-size: 14pt;
 }
 
-section {
+article {
     justify-content: space-between;
 }
 
-section ul li a {
+article ul li a {
     color: #999999;
     transition: .3s;
 }
 
-section ul li a:hover {
+article ul li a:hover {
     color: white;
 }
 
@@ -98,35 +105,60 @@ ul li, p, ul{
 .toptext {
     padding-bottom: 10px;
     color: white;
-    font-size: 15pt;
+    font-size: 16px;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+.asset {
+    padding: 20px 40px 0px 40px;
 }
 
 @media only screen and (max-width: 600px) {
-    header {
+    .homeicon {
         position: absolute;
         top: 200px;
         left: 40px;
         color: white;
-        margin: auto;
-        width: 80%;
     }
 
     #headercircle {
-        font-size: 30pt;
-        position: relative;
-        left: 265px;
-        bottom: 210px;
+        font-size: 25pt;
+        left: 50px;
+        top: -30px;
     }
 
     nav {
         left: 40px;
-        bottom: 70px;
-        font-size: 12pt;
-        gap: 20pt;
+        bottom: 50px;
     }
 
     .toptext {
-        font-size: 12pt;
+        padding-bottom: 10px;
+        color: white;
+        font-size: 14px;
+    }
+    
+    li, p {
+        font-size: 14px;
     }
 
+    header {
+        margin: auto;
+        width: 80%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    main {
+        width: 80%;
+        margin: auto;
+    }
+
+    .asset {
+        padding: 10px;
+    }
+    
 }
